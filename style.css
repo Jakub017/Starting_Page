@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(44, 49, 60);
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto 50px auto;
+}
+
+.search-box {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.query {
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 32px;
+}
+
+.icons {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 15px 35px;
+    border: none;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.links {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.card-container h2 {
+    margin-top: 0;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.card-container a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card {
+    background-color: rgb(35, 39, 46);
+    border-radius: 1rem;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(35, 39, 46);
+}
+
+.card img {
+    max-width: 80px;
+}
+
+.card-container:nth-of-type(5) .card img {
+    max-width: 100px;
+}
+
+.card-container:nth-of-type(7) .card img {
+    margin-top: 40px;
+    max-width: 120px;
+}
+
+.card-container:nth-of-type(8) .card img {
+    max-width: 150px;
+}
+
+.card-container:nth-of-type(10) .card img {
+    max-width: 150px;
+}
+
+
+.card-container:nth-of-type(12) .card img {
+    max-width: 150px;
+}
+
+.card-container:nth-of-type(15) .card img {
+    max-width: 100px;
+}
+
+.card-container:nth-of-type(16) .card img {
+    max-width: 120px;
+}
+
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 726px) {
+    .links {
+        flex-direction: row;
+    }
+}
