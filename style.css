@@ -33,6 +33,14 @@ body {
     outline: none;
     font-size: 16px;
     padding-left: 32px;
+    background-color: rgb(44, 49, 60);
+    color: white;
+    border: 1px solid #5f6368;
+
+}
+
+.query:focus {
+    box-shadow: 0 0 10px rgb(35, 39, 46);
 }
 
 .icons {
@@ -48,12 +56,21 @@ body {
 .search-button {
     padding: 15px 35px;
     border: none;
-    background-color: #fff;
+    background-color: rgb(25, 29, 36);
     border-radius: 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.3s all;
+    opacity: 0.8;
+}
+
+.search-button:hover {
+    opacity: 1;
 }
 
 .links {
-    width: 90%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
@@ -69,7 +86,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .card-container h2 {
