@@ -151,6 +151,11 @@ body {
     max-width: 150px;
 }
 
+.card-container.louve .card img {
+    max-width: 150px;
+}
+
+
 
 .card-container:hover {
     transform: scale(1.05);
