@@ -1,8 +1,15 @@
 let query = document.querySelector('.query');
 const searchButton = document.querySelector('.search-button');
 
-searchButton.addEventListener('click', function () {
+function search() {
     let url = 'https://www.google.com/search?q=' + query.value;
     window.open(url);
-    console.log("Działa");
+}
+
+
+searchButton.addEventListener('click', search)
+query.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        search();
+    }
 })
